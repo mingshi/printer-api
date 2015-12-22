@@ -25,5 +25,15 @@ class TemplateSourceModel extends BaseModel
         }
 		return $sql;
     } 
+
+    public static function listData($result)
+    {
+        $res = [];
+        foreach ($result as $r) {
+            $res[] = Config::get('app.image_host') . $r->source;
+        }
+
+        return $res;
+    }
 }
 

@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <title>XIAOQU-API</title>
+    <title>PRINTER-API</title>
     <style type="text/css">
         body {
             padding: 10px 30px;
@@ -38,6 +38,7 @@
 <ul>
     <li><a href="/1.0/doc/album/class/list">相册分类列表</a></li>
     <li><a href="/1.0/doc/album/template/list">相册模板列表</a></li>
+    <li><a href="/1.0/doc/album/template/images">模版图片列表</a></li>
 </ul>
 
 <h4>用户</h4>
