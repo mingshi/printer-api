@@ -22,5 +22,22 @@ class AlbumModel extends BaseModel
 
         return $sql;
     } 
+
+    public static function listData($results)
+    {
+        $res = [];
+        foreach ($results as $r) {
+            $tmp = [];
+            $tmp['id'] = $r->id;
+            $tmp['user_id'] = $r->user_id;
+            $tmp['class']   = $r->class;
+            $tmp['created_at'] = $r->created_at;
+            $tmp['source'] = Config::get('app.image_host') . $r->source;
+
+            $res[] = $tmp;
+        }
+
+        return $res;
+    }
 }
 
