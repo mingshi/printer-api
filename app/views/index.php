@@ -44,6 +44,7 @@
 <h4>用户</h4>
 <ul>
     <li><a href="/1.0/doc/my/album/list">相册列表</a></li>
+    <li><a href="/1.0/doc/my/create/order">下单</a></li>
 </ul>
 <p>强烈建议游览器安装jsonview插件，这有可以很方便的查看json返回的结果</p>
 </body>
