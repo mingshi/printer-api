@@ -22,5 +22,21 @@ class TemplateClassModel extends BaseModel
 
         return $sql;
     } 
+
+    public static function listData($res)
+    {
+        $result = [];
+        foreach ($res as $r) {
+            $tmp['id'] = $r->id;
+            $tmp['name'] = $r->name;
+            $tmp['sort'] = $r->sort;
+            $tmp['status'] = $r->status;
+            $tmp['front'] = Config::get('app.image_host') . $r->front;
+
+            $result[] = $tmp;
+        }
+
+        return $result;
+    }
 }
 

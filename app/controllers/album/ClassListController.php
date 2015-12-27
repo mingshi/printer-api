@@ -13,7 +13,7 @@ class ClassListController extends BaseController
     {
         $classes = TemplateClassORM::whereStatus(BaseORM::ENABLE)->orderBy('id', 'DESC')->get();
 
-        return $classes;
+        return TemplateClassModel::listData($classes);
     }
 }
 
