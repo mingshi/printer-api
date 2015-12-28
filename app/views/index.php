@@ -45,6 +45,8 @@
 <ul>
     <li><a href="/1.0/doc/my/album/list">相册列表</a></li>
     <li><a href="/1.0/doc/my/create/order">下单</a></li>
+    <li><a href="/1.0/doc/user/wx/info">用户信息（通过openid查找）</a></li>
+    <li><s><a href="/1.0/doc/user/wx/create">创建用户（通过openid查找）</a></s></li>
 </ul>
 
 <h4>活动</h4>
