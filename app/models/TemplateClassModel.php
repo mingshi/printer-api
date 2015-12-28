@@ -31,7 +31,7 @@ class TemplateClassModel extends BaseModel
             $tmp['name'] = $r->name;
             $tmp['sort'] = $r->sort;
             $tmp['status'] = $r->status;
-            $tmp['front'] = Config::get('app.image_host') . $r->front;
+            $tmp['front'] = !empty($r->front) ? Config::get('app.image_host') . $r->front : '';
 
             $result[] = $tmp;
         }
