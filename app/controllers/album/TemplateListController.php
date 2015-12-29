@@ -21,7 +21,7 @@ class TemplateListController extends BaseController
             return '相册分类未找到';
         }
 
-        $sql = "SELECT t.*, ts.source FROM template as t LEFT JOIN template_source as ts ON ts.template_id = t.id WHERE t.status=" . BaseORM::ENABLE . " AND ts.is_front = " . BaseORM::ENABLE. " ORDER BY t.sort DESC";
+        $sql = "SELECT t.*, ts.source FROM template as t LEFT JOIN template_source as ts ON ts.template_id = t.id WHERE t.class=$class_id AND t.status=" . BaseORM::ENABLE . " AND ts.is_front = " . BaseORM::ENABLE. " ORDER BY t.sort DESC";
         $results = DB::select(DB::raw($sql));
 
         return TemplateModel::listData($results);
