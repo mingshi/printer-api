@@ -39,6 +39,7 @@
     <li><a href="/1.0/doc/album/class/list">相册分类列表</a></li>
     <li><a href="/1.0/doc/album/template/list">相册模板列表</a></li>
     <li><a href="/1.0/doc/album/template/images">模版图片列表</a></li>
+    <li><a href="/1.0/doc/album/image/info">模板图片信息</a></li>
 </ul>
 
 <h4>用户</h4>
