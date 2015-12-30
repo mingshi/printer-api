@@ -30,7 +30,10 @@ class TemplateSourceModel extends BaseModel
     {
         $res = [];
         foreach ($result as $r) {
-            $res[$r->id] = Config::get('app.image_host') . $r->source;
+            $tmp = [];
+            $tmp['id'] = $r->id;
+            $tmp['source'] = Config::get('app.image_host') . $r->source;
+            $res[] = $tmp;
         }
 
         return $res;
