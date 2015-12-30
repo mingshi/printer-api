@@ -18,7 +18,7 @@ class TemplateImagesController extends BaseController
             return '模版未找到';
         }
 
-        $images = TemplateSourceORM::whereTemplateId($template_id)->orderBy('id', 'ASC')->get();
+        $images = TemplateSourceORM::whereTemplateId($template_id)->orderBy('is_front', 'DESC')->get();
 
         return TemplateSourceModel::listData($images);
     }
