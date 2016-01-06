@@ -44,6 +44,8 @@
 
 <h4>用户</h4>
 <ul>
+    <li><a href="/1.0/doc/album/create">创建相册</a></li>
+    <li><a href="/1.0/doc/image/create">保存图片</a></li>
     <li><a href="/1.0/doc/my/album/list">相册列表</a></li>
     <li><a href="/1.0/doc/my/create/order">下单</a></li>
     <li><a href="/1.0/doc/user/wx/info">用户信息（通过openid查找）</a></li>
