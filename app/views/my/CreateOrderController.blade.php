@@ -14,4 +14,16 @@
     <input type="text" name="quantity" value="4"/>
     <label class="color">quantity int</label><br>
 </div>
+<div>
+    <input type="text" name="real_name" value="4"/>
+    <label class="color">real_name string</label><br>
+</div>
+<div>
+    <input type="text" name="mobile" value="13472688824"/>
+    <label class="color">mobile string</label><br>
+</div>
+<div>
+    <input type="text" name="address" value="上海市"/>
+    <label class="color">address string</label><br>
+</div>
 @stop

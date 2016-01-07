@@ -47,8 +47,12 @@
     <li><a href="/1.0/doc/album/create">创建相册</a></li>
     <li><a href="/1.0/doc/image/create">保存图片</a></li>
     <li><a href="/1.0/doc/my/album/list">相册列表</a></li>
+    <li><a href="/1.0/doc/my/album/info">相册详情</a></li>
+    <li><a href="/1.0/doc/my/del/image">删除图片</a></li>
     <li><a href="/1.0/doc/my/create/order">下单</a></li>
+    <li><a href="/1.0/doc/my/order/list">订单列表</a></li>
     <li><a href="/1.0/doc/user/wx/info">用户信息（通过openid查找）</a></li>
+    <li><a href="/1.0/doc/user/info">用户信息（通过user_id查找）</a></li>
     <li><s><a href="/1.0/doc/user/wx/create">创建用户（通过openid查找）</a></s></li>
 </ul>
 

@@ -31,6 +31,7 @@ class AlbumModel extends BaseModel
             $tmp['id'] = $r->id;
             $tmp['user_id'] = $r->user_id;
             $tmp['class']   = $r->class;
+            $tmp['template_id'] = $r->template_id;
             $tmp['created_at'] = $r->created_at;
             $tmp['source'] = Config::get('app.image_host') . $r->source;
 

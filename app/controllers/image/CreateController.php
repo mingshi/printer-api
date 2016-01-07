@@ -16,7 +16,7 @@ class CreateController extends BaseController
         $user_id = Input::get('user_id', 0);
         $template_id = Input::get('template_id', 0);
 
-        $album = AlbumORM::whereId($album_id)->whereUserId($user_id)->first();
+        $album = AlbumORM::whereId($album_id)->whereTemplateId($template_id)->whereUserId($user_id)->first();
         if (empty($album)) {
             return '相册未找到';
         }
@@ -38,7 +38,8 @@ class CreateController extends BaseController
 
         $r = AlbumSourceORM::edit(0, [
             'album_id'  =>  $album_id,
-            'source'    =>  $source
+            'source'    =>  $source,
+            'is_front'  =>  $has_make == 0 ? 1 : 0
             ]);
 
         return $r[1];
