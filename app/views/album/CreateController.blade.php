@@ -10,4 +10,8 @@
     <input type="text" name="class_id" value="4"/>
     <label class="color">class_id int</label><br>
 </div>
+<div>
+    <input type="text" name="template_id" value="4"/>
+    <label class="color">template_id int</label><br>
+</div>
 @stop

@@ -11,6 +11,10 @@
     <label class="color">album_id int</label><br>
 </div>
 <div>
+    <input type="text" name="template_id" value="4"/>
+    <label class="color">template_id int</label><br>
+</div>
+<div>
     <input type="text" name="source" value="4"/>
     <label class="color">source int</label><br>
 </div>
