@@ -59,6 +59,7 @@
 <h4>活动</h4>
 <ul>
     <li><a href="/1.0/doc/activity/list">活动列表</a></li>
+    <li><a href="/1.0/doc/activity/info">活动详情</a></li>
 </ul>
 
 <h4>Banner</h4>

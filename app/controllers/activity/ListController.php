@@ -11,7 +11,15 @@ class ListController extends BaseController
 {
     public function run()
     {
-        return ActivityORM::all();
+        $data = ActivityORM::all();
+
+        $result = [];
+        foreach ($data as $a) {
+            $a->list_image = Config::get('app.image_host') . $a->list_image;
+            $result[] = $a;
+        }
+        
+        return $result;
     }
 }
 
