@@ -59,7 +59,7 @@ class CreateController extends BaseController
 
     private function _generate_out_trade_no($order_id, $user_id)
     {
-        return 'DaYinXiangPrint' . $order_id . $user_id;   
+        return 'DaYinXiangPrint' . $order_id . $user_id . time();   
     }
 }
 
