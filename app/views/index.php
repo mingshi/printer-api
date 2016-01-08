@@ -62,6 +62,12 @@
     <li><a href="/1.0/doc/activity/info">活动详情</a></li>
 </ul>
 
+<h4>支付</h4>
+<ul>
+    <li><a href="/1.0/doc/pay/create">创建支付订单</a></li>
+    <li><a href="/1.0/doc/pay/callback">支付回调</a></li>
+</ul>
+
 <h4>Banner</h4>
 <ul>
     <li><a href="/1.0/doc/banner/list">banner列表</a></li>
