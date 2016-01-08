@@ -49,7 +49,8 @@ class CreateController extends BaseController
         }
         
         try {
-            $jsParameters = Wxpay::getJsApiParameters($pay_ment->out_trade_no, $pay_ment->total_fee * 100, $pay_ment->openid);
+            $m = new Wxpay();
+            $jsParameters = $m->getJsApiParameters($pay_ment->out_trade_no, $pay_ment->total_fee * 100, $pay_ment->openid);
             return json_decode($jsParameters, true);
         } catch (Exception $e) {
             return '内部错误';

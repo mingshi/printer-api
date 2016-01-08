@@ -14,7 +14,7 @@ class Wxpay
     {
         $input = new WxPayUnifiedOrder();
 		$input->SetBody("购买相册打印服务");
-		$input->SetOut_trade_no($out_trade_not);
+		$input->SetOut_trade_no($out_trade_no);
 		$input->SetTotal_fee($fee);
 		$input->SetTime_start(date("YmdHis"));
 		$input->SetTime_expire(date("YmdHis", time() + 600));
