@@ -16,7 +16,7 @@ class CreateController extends BaseController
         $user_id = Input::get('user_id', 0);
         $open_id = Input::get('open_id', '');
 
-        $pay_ment = PayMentORM::whereOrderId($order_id)->first();
+        $pay_ment = PayMentORM::whereOrderId($order_id)->where('openid', '<>', '')->first();
         if (empty($pay_ment)) {
             $order = OrderORM::whereId($order_id)->wherePayStatus(BaseORM::DISABLE)->first();
             if (empty($order)) {
